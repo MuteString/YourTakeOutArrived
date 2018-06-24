@@ -14,12 +14,13 @@
     <link href="/static/dist/css/bootstrap.css" rel="stylesheet">
     <link href="/static/dist/css/blog.css" rel="stylesheet">
     <link href="/static/dist/css/grid.css" rel="stylesheet">
+{#    <link href="/static/ele/css/forward_201503262210.css" type="text/css" rel="stylesheet" />#}
 
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #eeeeee">
 <div class="blog-masthead">
     <div class="container">
         <nav class="blog-nav">
@@ -58,9 +59,9 @@
 {% block container %}
     <div class="container">
         <br>
-        <div class="">
-            <span>全部商家：</span>
-            <ul class="nav nav-pills">
+        <div class="jumbotron" style="background-color: white">
+            <span style="float: left">全部商家：</span>
+            <ul class="nav nav-pills" style="float: left">
                 <li><a href="#">早餐</a></li>
                 <li><a href="#">午餐</a></li>
                 <li><a href="#">下午茶</a></li>
@@ -69,10 +70,39 @@
             </ul>
         </div>
         <div class="row">
-            <div class="col-md-3">.col-md-3</div>
-            <div class="col-md-3">.col-md-3</div>
-            <div class="col-md-3">.col-md-3</div>
-            <div class="col-md-3">.col-md-3</div>
+            <div class="col-md-3" style="background-color: white">
+                <div class="line-one">
+                    <div class="logo-wrapper" style="float: left">
+                        <div class="logo">
+                            <div class="conform-logo-company"></div>
+                            <a href="http://r.ele.me/ptnh-icidessert" target="_blank"><img class="restaurant-logo" alt="Ici Dessert甜品店" srcset="http://fuss10.elemecdn.com/7/38/83f7d7ba09e536a3d559ac90fb6bcjpeg.jpeg?w=42&amp;h=42 1x, http://fuss10.elemecdn.com/7/38/83f7d7ba09e536a3d559ac90fb6bcjpeg.jpeg?w=84&amp;h=84 2x" /></a>
+                        </div>
+                        <div class="deliver-time-wrapper tooltip_on" data-toggle="tooltip" title="平均送餐时间:30分钟">
+                            30分钟
+                        </div>
+                    </div>
+                    <div class="info" style="float: left; padding-left:10px;">
+                        <div class="name">
+                            <a class="restaurant-link" href="http://r.ele.me/ptnh-icidessert" target="_blank">Ici Dessert甜..</a>
+                        </div>
+                        <div class="flavors ">
+                            甜点
+                        </div>
+                        <div class="ratings ">
+                            <div class="r10 rating-star" title="餐厅评价：4.9星"></div>
+                            <span class="rating-number">470份</span>
+                        </div>
+                        <div class="icons">
+                            <span class="restaurant-icons online-payment tooltip_on" data-toggle="tooltip" title="该餐厅支持在线支付">&nbsp;</span>
+                            <span class="restaurant-icons extra-discount tooltip_on" data-toggle="tooltip" title="在线支付满20减10">&nbsp;</span>
+                            <span class="restaurant-icons new-user-discount tooltip_on" data-toggle="tooltip" title="饿了么新用户在该餐厅下首单，可立减15元">&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">.col-md-4</div>
+            <div class="col-md-3">.col-md-4</div>
+            <div class="col-md-3">.col-md-4</div>
         </div>
     </div><!-- /.container -->
 {% endblock %}
